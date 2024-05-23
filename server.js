@@ -9,7 +9,7 @@ const API_KEY = process.env.API_KEY;
 const port = 3001;
 
 app.get("/", function (req, res) {
-  const address = req.query.address;
+  const address = req.query.address; 
 
   if (!address) {
     return res.status(400).send("Please provide an address.");
